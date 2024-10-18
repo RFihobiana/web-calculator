@@ -45,7 +45,7 @@ inputField.addEventListener('keyup', event => {
 
 // Unable character input in the field
 inputField.addEventListener('input', event => {
-	if (!/[\d\+\-\/\*\s]/ui.test(event.data) && event.inputType !== 'deleteContentBackward') {
+	if (!/[\d\+\-\/\*\s\.]/ui.test(event.data) && event.inputType !== 'deleteContentBackward') {
 		// Incorrect value, delete the last added one
 		clearInput()
 		// TODO: Change to look as an error but write it
